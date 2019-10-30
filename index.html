@@ -9,7 +9,7 @@
         </label>
     </div>
 <script>
-let hostname = location.hostname
+let hostname = (location.hostname === 'localhost') ? location.hostname : '118.24.221.219' 
 let port = '8080'
 // hostname = 'localhost'
 var headers = { 'x-auth-token': localStorage.getItem('auth') || document.getElementById('auth').value }
